@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import "ui/scss/mixins";
+@import "ui/scss/variables";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,8 +34,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     color: #FFFFFF;
-    background-color: #151515;
-
+    background-color: $background-black--primary;
 	line-height: 1;
 }
 

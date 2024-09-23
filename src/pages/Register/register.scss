@@ -1,0 +1,46 @@
+@import "/src/ui/scss/variables";
+@import "/src/ui/scss/mixins";
+
+.card {
+  @include flex-column;
+  @include gray-border;
+  width: 428px;
+  height: 544px;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-ui--primary;
+}
+.test {
+  @include text-bold;
+  font-size: 3rem;
+}
+.logo {
+  @include flex-column;
+  margin-inline: auto;
+  padding: 20px 20px 0;
+  width: 238px;
+  height: 55px;
+}
+.divider {
+  width: 90vw;
+  margin-inline: auto;
+  height: 1px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+}
+.layout {
+  @include flex-column;
+  gap: 2vw;
+}
+.text-1 {
+  @include text-light;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.card-container {
+  @include flex-column;
+  width: 100vw;
+  height: fit-content;
+  align-items: center;
+}

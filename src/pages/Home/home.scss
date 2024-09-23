@@ -1,23 +1,21 @@
+@import "/src/ui/scss/variables";
+@import "/src/ui/scss/mixins";
 .home {
+    @include flex-column;
     width: 100vw;
     height: 100vh;
-
     font-size: 1.5rem;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .home__link {
         margin-bottom: 20px;
-
         &:hover {
             color: #befbff
         }
     }
 
     .home__link:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 }

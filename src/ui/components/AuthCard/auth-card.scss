@@ -1,0 +1,35 @@
+@import "/src/ui/scss/variables";
+@import "/src/ui/scss/mixins";
+
+.text-1 {
+  @include text-light;
+  font-size: $text-size--regular;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.card-container {
+  @include flex-column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+.register {
+  @include flex-column;
+  @include gray-border;
+  width: 28.75rem;
+  justify-content: start;
+  padding: 1.25rem;
+  align-items: center;
+  background-color: $background-ui--primary;
+  height: 34rem;
+}
+.login {
+  height: 27.875rem;
+  @include flex-column;
+  @include gray-border;
+  width: 28.75rem;
+  justify-content: start;
+  padding: 1.25rem;
+  align-items: center;
+  background-color: $background-ui--primary;
+}

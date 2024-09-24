@@ -4,7 +4,7 @@
 .logo {
   @include flex-column;
   margin-inline: auto;
-  padding: 20px 20px 0;
+  padding: 1.25rem 1.25rem 0;
   width: 14.875rem;
   height: 3.438rem;
 }
@@ -13,7 +13,7 @@
   width: 90%;
   margin-inline: auto;
   height: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   background-color: #FFFFFF;
 }
 .header-gap {

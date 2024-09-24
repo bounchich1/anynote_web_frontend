@@ -5,12 +5,12 @@
   @include text-regular;
   @include gray-border;
   background-color: $input-field-background;
-  height: 50px;
-  margin-top: 15px;
+  height: 3.125rem;
+  margin-top: 1rem;
   color: $text-color--white;
   font-size: 1.2rem;
   width: 25.688rem;
-  padding-left: 10px;
+  padding-left: 0.625rem;
   &:hover {
     border: 2px solid #656565;
   }
@@ -23,7 +23,7 @@
 .input-field-flex {
   @include flex-column;
   align-items: start;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .top-description {
   @include text-bold;

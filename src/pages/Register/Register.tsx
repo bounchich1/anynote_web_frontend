@@ -13,11 +13,11 @@ function Register() {
         <>
             <div className='layout'>
                 <AuthHeader />
-                <AuthCard cardDescription={'Create an account in Anynote'} cardSize={'card register'}>
-                    <TextInputField setValue={setEmail} topDescription={'Email address'}/>
-                    <TextInputField setValue={setUserName} topDescription={'Username'}/>
-                    <TextInputField setValue={setPassword} topDescription={'Password'} type='password'/>
-                    <Button buttonText={'Create an account'} />
+                <AuthCard description="Create an account in Anynote" size="register">
+                    <TextInputField setValue={setEmail} description="Email address"/>
+                    <TextInputField setValue={setUserName} description="Username"/>
+                    <TextInputField setValue={setPassword} description="Password" type="password"/>
+                    <Button buttonText="Create an account" />
                 </AuthCard>
             </div>
 

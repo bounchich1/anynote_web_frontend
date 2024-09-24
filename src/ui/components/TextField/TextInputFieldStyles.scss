@@ -1,0 +1,32 @@
+@import '/src/ui/scss/variables';
+@import '/src/ui/scss/mixins';
+
+.default-input {
+  @include text-regular;
+  @include gray-border;
+  background-color: $input-field-background;
+  height: 50px;
+  margin-top: 15px;
+  color: $text-color--white;
+  font-size: 1.2rem;
+  width: 25.688rem;
+  padding-left: 10px;
+  &:hover {
+    border: 2px solid #656565;
+  }
+  &:focus {
+    outline: none !important;
+    border: 2px solid #23ADE9;
+  }
+}
+
+.input-field-flex {
+  @include flex-column;
+  align-items: start;
+  margin-top: 20px;
+}
+.top-description {
+  @include text-bold;
+  font-size: $text-size--regular;
+  color: $text-color--white;
+}

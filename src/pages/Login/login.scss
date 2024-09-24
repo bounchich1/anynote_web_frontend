@@ -1,0 +1,7 @@
+@import "/src/ui/scss/variables";
+@import "/src/ui/scss/mixins";
+
+.layout {
+  @include flex-column;
+  gap: 4.5rem;
+}

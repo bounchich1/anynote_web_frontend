@@ -1,0 +1,19 @@
+@import '/src/ui/scss/variables';
+@import '/src/ui/scss/mixins';
+
+.default-button {
+  @include gray-border;
+  @include text-bold;
+  width: 26.688rem;
+  height: 4.375rem;
+  color: $text-color--white;
+  margin-top: 50px;
+  font-size: $text-size--regular;
+  background-color: #000000;
+  &:hover {
+    // animashku ne pridumal :(
+  }
+  &:focus {
+    // animashku ne pridumal :(
+  }
+}

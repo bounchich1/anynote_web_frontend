@@ -1,29 +1,24 @@
 import "./register.scss"
-import logo from '../../ui/assets/icons/logo.svg'
-function Card() {
-    return (
-        <>
-            <div className='card-container'>
-                <h2 className={'text-1'}>Create an account in Anynote</h2>
-                <div className="card">
-                    <h1 className="test">Anynote</h1>
-                    <h2>sddf</h2>
-                </div>
-            </div>
-        </>
-    )
-}
+import {useState} from "react";
+import TextInputField from '../../ui/components/TextField/TextInputField.tsx'
+import Button from "../../ui/components/AuthButton/Button.tsx";
+import AuthHeader from "../../ui/components/AuthHeader/AuthHeader.tsx";
+import AuthCard from "../../ui/components/AuthCard/AuthCard.tsx";
 
 function Register() {
-
+    const [email, setEmail] = useState<string>('')
+    const [password, setPassword] = useState<string>('')
+    const [userName, setUserName] = useState<string>('')
     return (
         <>
             <div className='layout'>
-                <div className='logo'>
-                    <img src={logo} alt={'Logo'}/>
-                </div>
-                <div className='divider'></div>
-                <Card />
+                <AuthHeader />
+                <AuthCard cardDescription={'Create an account in Anynote'} cardSize={'card register'}>
+                    <TextInputField setValue={setEmail} topDescription={'Email address'}/>
+                    <TextInputField setValue={setUserName} topDescription={'Username'}/>
+                    <TextInputField setValue={setPassword} topDescription={'Password'} type='password'/>
+                    <Button buttonText={'Create an account'} />
+                </AuthCard>
             </div>
 
         </>

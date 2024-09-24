@@ -1,0 +1,22 @@
+@import "/src/ui/scss/variables";
+@import "/src/ui/scss/mixins";
+
+.logo {
+  @include flex-column;
+  margin-inline: auto;
+  padding: 20px 20px 0;
+  width: 14.875rem;
+  height: 3.438rem;
+}
+
+.divider {
+  width: 90%;
+  margin-inline: auto;
+  height: 1px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+}
+.header-gap {
+  @include flex-column;
+  gap: 2.5rem;
+}
